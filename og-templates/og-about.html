@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    background: #f6f6ff;
+  }
+  .card {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 64px;
+    background: linear-gradient(135deg, #f6f6ff 0%, #eaecff 50%, #f0f4ff 100%);
+  }
+  .accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #005ca8 0%, #964300 100%);
+  }
+  .accent-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #964300 0%, #005ca8 100%);
+  }
+  .side-accent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,92,168,0.06) 0%, rgba(150,67,0,0.04) 100%);
+  }
+  .logo { font-size: 52px; font-weight: 800; color: #005ca8; letter-spacing: -1px; }
+  .firm-name { font-size: 20px; color: #444; font-weight: 600; margin-top: 4px; }
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; margin-top: -20px; }
+  .title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.15;
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 22px;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 800px;
+  }
+  .footer {
+    font-size: 16px;
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .dot { display: inline-block; width: 8px; height: 8px; background: #964300; border-radius: 50%; margin-right: 12px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="accent-bar"></div>
+  <div class="accent-line"></div>
+  <div class="side-accent"></div>
+  <div>
+    <div class="logo">VG</div>
+    <div class="firm-name">Vinay Gupta &amp; Associates</div>
+  </div>
+  <div class="content">
+    <div class="title">About Vinay Gupta &amp; Associates</div>
+    <div class="subtitle">15+ years of trusted taxation advisory. 10,000+ clients served.</div>
+  </div>
+  <div class="footer"><span class="dot"></span>Taxation Advisors and Consultants, Dehradun</div>
+</div>
+</body>
+</html>
